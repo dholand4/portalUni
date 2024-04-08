@@ -6,6 +6,7 @@ import RM from "../pages/RM";
 import AVA from "../pages/AVA";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Library from "../pages/Library";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ export function AppRoutes() {
       <Stack.Screen name="AVA" component={AVA} />
       <Stack.Screen name="SGA" component={SGA} />
       <Stack.Screen name="RM" component={RM} />
+      <Stack.Screen name="Library" component={Library} />
     </Stack.Navigator>
   );
 }

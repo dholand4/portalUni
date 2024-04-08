@@ -20,8 +20,7 @@ export const Button = styled.TouchableOpacity<ContainerProps>`
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: ${({ theme, color }) => color || theme.colors.ava1};
-  background-color: ${theme.colors.white};
+  background-color: ${theme.colors.backgroundloading};
   border-radius: 20px;
   border: 0.8px;
   border-color: ${theme.colors.ava1};
