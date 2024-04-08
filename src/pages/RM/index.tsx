@@ -4,14 +4,14 @@ import { WebView } from 'react-native-webview';
 import * as S from "./styles";
 import theme from '../../global/styles/theme';
 
-export default function AVA() {
+export default function RM() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
     <S.Container>
       <WebView
         source={{ uri: 'https://online3.ucq.edu.br/corpore.net/Login.aspx' }}
-        style={{ flex: 1 }}
+        style={{ flex: 1, marginTop: 24, }}
         onLoad={() => setIsLoading(false)}
       />
       {isLoading && (

@@ -21,13 +21,14 @@ export const Button = styled.TouchableOpacity<ContainerProps>`
   justify-content: center;
   align-items: center;
   background: ${({ theme, color }) => color || theme.colors.ava1};
-  border-radius: 25px;
-  border: 2px;
-  border-color: ${theme.colors.ava2};
+  background-color: ${theme.colors.white};
+  border-radius: 20px;
+  border: 0.8px;
+  border-color: ${theme.colors.ava1};
 `;
 
 export const ButtonText = styled.Text<ButtonTextProps>`
   font-size: 15px;
   font-weight: bold;
-  color: ${({ theme, colorText }) => colorText || theme.colors.ava1};
+  color: ${theme.colors.ava1};;
 `;

@@ -11,7 +11,7 @@ export default function AVA() {
     <S.Container>
       <WebView
         source={{ uri: 'https://ava.unicatolicaquixada.edu.br/portal3/login/index.php' }}
-        style={{ flex: 1 }}
+        style={{ flex: 1, marginTop: 24, }}
         onLoad={() => setIsLoading(false)}
       />
       {isLoading && (
