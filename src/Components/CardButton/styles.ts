@@ -27,7 +27,7 @@ export const Button = styled.TouchableOpacity<ContainerProps>`
 `;
 
 export const ButtonText = styled.Text<ButtonTextProps>`
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   color: ${({ theme, colorText }) => colorText || theme.colors.ava1};
 `;
