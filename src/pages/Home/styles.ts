@@ -8,18 +8,29 @@ export const StyledImageBackground = styled(ImageBackground)`
   height: 100%;
 `;
 
+export const Image = styled.Image`
+  width: 130px;
+  height: 130px;
+  margin-bottom: -5px;
+`;
+
 export const Container = styled.View`
   flex: 1;
   padding: 20px;
   align-items: center;
-  justify-content: center;
-  background-color: ${theme.colors.black};
+  background-color: ${theme.colors.ava1};
+`;
+
+export const ContainerButton = styled.View`
+flex-direction: row;
+align-items: center;
+margin-left: -10px;
 `;
 
 export const Footer = styled.Text`
   font-size: 12px;
-  font-weight: bold;
-  color: ${theme.colors.ava1};
+  /* font-weight: bold; */
+  color: ${theme.colors.white};
   position: absolute;
   bottom: 10px;
 `;

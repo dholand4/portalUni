@@ -9,7 +9,7 @@ interface Props {
   action?: () => void;
 }
 
-function ButtonGlobal({ action, text, color, colorText }: Props) {
+function ButtonPages({ action, text, color, colorText }: Props) {
   return (
     <S.Container>
       <S.Button color={color} onPress={action}>
@@ -19,4 +19,4 @@ function ButtonGlobal({ action, text, color, colorText }: Props) {
   );
 }
 
-export default memo(ButtonGlobal);
+export default memo(ButtonPages);
