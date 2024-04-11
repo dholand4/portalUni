@@ -2,12 +2,6 @@ import styled from "styled-components/native";
 import theme from "../../global/styles/theme";
 import { ImageBackground } from "react-native";
 
-export const StyledImageBackground = styled(ImageBackground)`
-  flex: 1;
-  width: 100%;
-  height: 100%;
-`;
-
 export const Image = styled.Image`
   width: 130px;
   height: 130px;
@@ -25,6 +19,12 @@ export const ContainerButton = styled.View`
 flex-direction: row;
 align-items: center;
 margin-left: -10px;
+`;
+
+export const ContainerButtonLinks = styled.View`
+align-items: center;
+/* margin-left: -10px; */
+width: 105%;
 `;
 
 export const Footer = styled.Text`

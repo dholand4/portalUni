@@ -5,7 +5,6 @@ import Button from "../../Components/Button";
 
 import { useNavigation } from '@react-navigation/native';
 
-import backgroundImage from '../../assets/banner.png';
 import logo from "../../assets/logo.png"
 import * as S from "./styles";
 
@@ -32,8 +31,11 @@ export default function Home() {
     navigation.navigate("Site");
   }
 
+  function handleNavigationContacts() {
+    navigation.navigate("Contacts");
+  }
+
   return (
-    // <S.StyledImageBackground source={backgroundImage}>
     <S.Container>
 
       <S.Image source={logo} />
@@ -58,12 +60,12 @@ export default function Home() {
         </CardButton>
       </S.ContainerButton>
 
-      <Button text="Site UniCatólica" action={handleNavigationSite} />
-      <Button text="Contatos" />
+      <S.ContainerButtonLinks>
+        <Button text="Site UniCatólica" action={handleNavigationSite} />
+        <Button text="Contatos" action={handleNavigationContacts} />
+      </S.ContainerButtonLinks>
 
       <S.Footer>2024 © Daniel Holanda</S.Footer>
-
     </S.Container>
-    // </S.StyledImageBackground>
   );
 }

@@ -10,7 +10,7 @@ interface ButtonTextProps {
 }
 
 export const Container = styled.View`
-  width: 105%;
+  width: 100%;
   height: 50px;
   margin-top: 10px;
 `;
