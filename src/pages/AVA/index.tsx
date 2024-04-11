@@ -13,7 +13,7 @@ export default function Library() {
       <StatusBar backgroundColor={theme.colors.ava2} style="dark" />
       <S.Container>
         <WebView
-          source={{ uri: 'https://ava.unicatolicaquixada.edu.br/portal3/login/index.php' }}
+          source={{ uri: 'ava.unicatolicaquixada.edu.br' }}
           style={{ flex: 1, marginTop: 24, }}
           onLoad={() => setIsLoading(false)}
         />

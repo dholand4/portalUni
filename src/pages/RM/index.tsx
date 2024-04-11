@@ -10,7 +10,7 @@ export default function RM() {
   return (
     <S.Container>
       <WebView
-        source={{ uri: 'https://online3.ucq.edu.br/corpore.net/Login.aspx' }}
+        source={{ uri: 'online3.ucq.edu.br/corpore.net/Login.aspx' }}
         style={{ flex: 1, marginTop: 24, }}
         onLoad={() => setIsLoading(false)}
       />

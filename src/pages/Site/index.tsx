@@ -14,7 +14,7 @@ export default function Library() {
       <StatusBar backgroundColor={theme.colors.white} style="dark" />
       <S.Container>
         <WebView
-          source={{ uri: 'https://unicatolicaquixada.edu.br/' }}
+          source={{ uri: 'unicatolicaquixada.edu.br' }}
           style={{ flex: 1, marginTop: 24, }}
           onLoad={() => setIsLoading(false)}
         />
