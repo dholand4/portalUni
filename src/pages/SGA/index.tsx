@@ -10,7 +10,7 @@ export default function SGA() {
   return (
     <S.Container>
       <WebView
-        source={{ uri: 'sga.ucq.edu.br' }}
+        source={{ uri: 'https://sga.ucq.edu.br/sga/login.xhtml' }}
         style={{ flex: 1, marginTop: 24, }}
         onLoad={() => setIsLoading(false)}
       />

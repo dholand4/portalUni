@@ -5,7 +5,7 @@ import { WebView } from 'react-native-webview';
 import * as S from "./styles";
 import theme from '../../global/styles/theme';
 
-export default function Library() {
+export default function Site() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -14,7 +14,7 @@ export default function Library() {
       <StatusBar backgroundColor={theme.colors.white} style="dark" />
       <S.Container>
         <WebView
-          source={{ uri: 'unicatolicaquixada.edu.br' }}
+          source={{ uri: 'https://unicatolicaquixada.edu.br/' }}
           style={{ flex: 1, marginTop: 24, }}
           onLoad={() => setIsLoading(false)}
         />

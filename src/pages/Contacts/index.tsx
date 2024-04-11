@@ -15,15 +15,6 @@ export default function Contacts() {
 
   return (
     <S.Container>
-      {/* <S.List>
-        {mock.map((contact) => (
-          <Button
-            key={contact.id}
-            text={contact.name}
-            action={() => openWhatsApp(contact)} />
-        ))}
-      </S.List> */}
-
       <S.List
         data={mock}
         renderItem={({ item }) => (

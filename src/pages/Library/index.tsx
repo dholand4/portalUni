@@ -10,7 +10,7 @@ export default function Library() {
   return (
     <S.Container>
       <WebView
-        source={{ uri: 'dliportal.zbra.com.br/Login.aspx?key=fcrs' }}
+        source={{ uri: 'https://dliportal.zbra.com.br/Login.aspx?key=fcrs' }}
         style={{ flex: 1, marginTop: 24, }}
         onLoad={() => setIsLoading(false)}
       />

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { View, ActivityIndicator } from 'react-native';
+import { ActivityIndicator } from 'react-native';
 import { WebView } from 'react-native-webview';
 import * as S from "./styles";
 import theme from '../../global/styles/theme';
 import { StatusBar } from "expo-status-bar";
 
-export default function Library() {
+export default function AVA() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
@@ -13,7 +13,7 @@ export default function Library() {
       <StatusBar backgroundColor={theme.colors.ava2} style="dark" />
       <S.Container>
         <WebView
-          source={{ uri: 'ava.unicatolicaquixada.edu.br' }}
+          source={{ uri: 'https://ava.unicatolicaquixada.edu.br/portal3/login/index.php' }}
           style={{ flex: 1, marginTop: 24, }}
           onLoad={() => setIsLoading(false)}
         />
