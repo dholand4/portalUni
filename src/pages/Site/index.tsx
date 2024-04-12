@@ -9,21 +9,17 @@ export default function Site() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <>
-
-      <StatusBar backgroundColor={theme.colors.white} style="dark" />
-      <S.Container>
-        <WebView
-          source={{ uri: 'https://unicatolicaquixada.edu.br/' }}
-          style={{ flex: 1, marginTop: 24, }}
-          onLoad={() => setIsLoading(false)}
-        />
-        {isLoading && (
-          <S.LoadingView>
-            <ActivityIndicator size="large" color={theme.colors.ava1} />
-          </S.LoadingView>
-        )}
-      </S.Container>
-    </>
+    <S.Container>
+      <WebView
+        source={{ uri: 'https://unicatolicaquixada.edu.br/' }}
+        style={{ flex: 1, marginTop: 27, }}
+        onLoad={() => setIsLoading(false)}
+      />
+      {isLoading && (
+        <S.LoadingView>
+          <ActivityIndicator size="large" color={theme.colors.ava1} />
+        </S.LoadingView>
+      )}
+    </S.Container>
   );
 }

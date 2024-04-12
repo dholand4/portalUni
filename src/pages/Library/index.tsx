@@ -11,7 +11,7 @@ export default function Library() {
     <S.Container>
       <WebView
         source={{ uri: 'https://dliportal.zbra.com.br/Login.aspx?key=fcrs' }}
-        style={{ flex: 1, marginTop: 24, }}
+        style={{ flex: 1, marginTop: 27, }}
         onLoad={() => setIsLoading(false)}
       />
       {isLoading && (
